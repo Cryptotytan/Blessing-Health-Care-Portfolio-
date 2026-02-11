@@ -1,0 +1,2271 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Osadebamwen Enobakhare - Registered Nurse | BLS Certified | Emerging Researcher | Leveraging Data & Innovation to Improve Healthcare Outcomes">
+    <meta name="keywords" content="Registered Nurse, Midwife, Healthcare Innovation, Data Analysis, BLS Certified, Nigeria Healthcare">
+    <meta name="author" content="Osadebamwen Enobakhare">
+    <title>Osadebamwen Enobakhare | RN • Healthcare Innovator</title>
+    
+    <!-- Google Fonts - Distinctive Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* ========================================
+           CSS CUSTOM PROPERTIES & DESIGN TOKENS
+        ======================================== */
+        :root {
+            /* Color Palette - Medical Professional with Sophisticated Depth */
+            --color-primary: #0B4F6C;
+            --color-primary-light: #1B6F8C;
+            --color-primary-dark: #053543;
+            --color-secondary: #01BAEF;
+            --color-accent: #20BF55;
+            --color-accent-warm: #FBAA19;
+            
+            /* Neutrals with Warmth */
+            --color-white: #FFFFFF;
+            --color-cream: #FBF8F3;
+            --color-light: #F5F1EB;
+            --color-gray-100: #E8E4DE;
+            --color-gray-300: #C5BDB3;
+            --color-gray-500: #8A8279;
+            --color-gray-700: #4A4540;
+            --color-gray-900: #252220;
+            --color-black: #1A1816;
+            
+            /* Typography */
+            --font-display: 'Playfair Display', Georgia, serif;
+            --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-accent: 'Cormorant Garamond', Georgia, serif;
+            
+            /* Spacing Scale */
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 1.5rem;
+            --space-lg: 2rem;
+            --space-xl: 3rem;
+            --space-2xl: 4rem;
+            --space-3xl: 6rem;
+            
+            /* Border Radius */
+            --radius-sm: 0.375rem;
+            --radius-md: 0.75rem;
+            --radius-lg: 1.5rem;
+            --radius-xl: 2rem;
+            --radius-full: 9999px;
+            
+            /* Shadows */
+            --shadow-sm: 0 2px 8px rgba(11, 79, 108, 0.08);
+            --shadow-md: 0 4px 20px rgba(11, 79, 108, 0.12);
+            --shadow-lg: 0 12px 40px rgba(11, 79, 108, 0.15);
+            --shadow-xl: 0 20px 60px rgba(11, 79, 108, 0.2);
+            
+            /* Transitions */
+            --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-bounce: 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        
+        /* ========================================
+           RESET & BASE STYLES
+        ======================================== */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            font-weight: 400;
+            line-height: 1.6;
+            color: var(--color-gray-900);
+            background-color: var(--color-cream);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+        }
+        
+        /* ========================================
+           TYPOGRAPHY SYSTEM
+        ======================================== */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-display);
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--color-primary-dark);
+            margin-bottom: var(--space-md);
+        }
+        
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+        
+        h2 {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+        
+        h3 {
+            font-size: clamp(1.5rem, 3vw, 2.25rem);
+            font-weight: 600;
+        }
+        
+        h4 {
+            font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: var(--space-md);
+            color: var(--color-gray-700);
+            font-size: clamp(1rem, 2vw, 1.125rem);
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all var(--transition-base);
+        }
+        
+        /* ========================================
+           NAVIGATION BAR
+        ======================================== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(251, 248, 243, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--color-gray-100);
+            transition: all var(--transition-base);
+        }
+        
+        .navbar.scrolled {
+            background: rgba(251, 248, 243, 0.98);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .navbar__container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: var(--space-md) var(--space-lg);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navbar__logo {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-primary-dark);
+        }
+        
+        .navbar__logo-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .navbar__logo-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .navbar__menu {
+            display: flex;
+            gap: var(--space-xl);
+            list-style: none;
+        }
+        
+        .navbar__link {
+            font-weight: 500;
+            font-size: 1rem;
+            color: var(--color-gray-700);
+            position: relative;
+            padding: var(--space-xs) 0;
+        }
+        
+        .navbar__link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-primary);
+            transition: width var(--transition-base);
+        }
+        
+        .navbar__link:hover {
+            color: var(--color-primary);
+        }
+        
+        .navbar__link:hover::after {
+            width: 100%;
+        }
+        
+        .navbar__cta {
+            display: flex;
+            gap: var(--space-md);
+            align-items: center;
+        }
+        
+        .navbar__hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            padding: var(--space-xs);
+        }
+        
+        .navbar__hamburger-line {
+            width: 28px;
+            height: 3px;
+            background: var(--color-primary);
+            border-radius: 2px;
+            transition: all var(--transition-base);
+        }
+        
+        .navbar__hamburger.active .navbar__hamburger-line:nth-child(1) {
+            transform: rotate(45deg) translate(8px, 8px);
+        }
+        
+        .navbar__hamburger.active .navbar__hamburger-line:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .navbar__hamburger.active .navbar__hamburger-line:nth-child(3) {
+            transform: rotate(-45deg) translate(8px, -8px);
+        }
+        
+        /* ========================================
+           BUTTONS
+        ======================================== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-xs);
+            padding: 0.875rem 2rem;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: var(--radius-full);
+            cursor: pointer;
+            border: none;
+            transition: all var(--transition-base);
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        
+        .btn--primary {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+            color: white;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .btn--primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .btn--secondary {
+            background: transparent;
+            color: var(--color-primary);
+            border: 2px solid var(--color-primary);
+        }
+        
+        .btn--secondary:hover {
+            background: var(--color-primary);
+            color: white;
+        }
+        
+        .btn--icon {
+            width: 48px;
+            height: 48px;
+            padding: 0;
+            border-radius: var(--radius-full);
+        }
+        
+        /* ========================================
+           HERO SECTION
+        ======================================== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: var(--space-3xl) var(--space-lg);
+            padding-top: calc(var(--space-3xl) + 80px);
+            background: linear-gradient(135deg, 
+                var(--color-cream) 0%, 
+                #F0EDE7 50%, 
+                var(--color-light) 100%
+            );
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, 
+                rgba(1, 186, 239, 0.08) 0%, 
+                transparent 60%
+            );
+            animation: float 20s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(30px, -30px) rotate(5deg); }
+            66% { transform: translate(-20px, 20px) rotate(-5deg); }
+        }
+        
+        .hero__container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-3xl);
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero__content {
+            animation: slideInLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .hero__badge {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            padding: var(--space-xs) var(--space-md);
+            background: white;
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: var(--space-md);
+            box-shadow: var(--shadow-sm);
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .hero__title {
+            margin-bottom: var(--space-md);
+            background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero__subtitle {
+            font-family: var(--font-accent);
+            font-size: clamp(1.25rem, 3vw, 1.75rem);
+            font-weight: 500;
+            color: var(--color-primary);
+            font-style: italic;
+            margin-bottom: var(--space-md);
+        }
+        
+        .hero__description {
+            font-size: clamp(1.125rem, 2.5vw, 1.25rem);
+            line-height: 1.8;
+            color: var(--color-gray-700);
+            margin-bottom: var(--space-xl);
+        }
+        
+        .hero__actions {
+            display: flex;
+            gap: var(--space-md);
+            flex-wrap: wrap;
+        }
+        
+        .hero__stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-lg);
+            margin-top: var(--space-2xl);
+            padding-top: var(--space-xl);
+            border-top: 1px solid var(--color-gray-100);
+        }
+        
+        .hero__stat {
+            text-align: center;
+        }
+        
+        .hero__stat-number {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            display: block;
+        }
+        
+        .hero__stat-label {
+            font-size: 0.875rem;
+            color: var(--color-gray-500);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .hero__image-wrapper {
+            position: relative;
+            animation: slideInRight 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .hero__image-container {
+            position: relative;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .hero__image-bg {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-accent) 100%);
+            border-radius: var(--radius-xl);
+            opacity: 0.2;
+            animation: rotate 20s linear infinite;
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .hero__image {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-xl);
+            border: 8px solid white;
+        }
+        
+        .hero__badge-float {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background: white;
+            padding: var(--space-md) var(--space-lg);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            animation: bounce 2s ease-in-out infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .hero__badge-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--color-accent) 0%, #17A446 100%);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .hero__badge-text {
+            font-weight: 600;
+            color: var(--color-primary-dark);
+        }
+        
+        .hero__badge-subtext {
+            font-size: 0.75rem;
+            color: var(--color-gray-500);
+        }
+        
+        /* ========================================
+           SECTION STYLES
+        ======================================== */
+        .section {
+            padding: var(--space-3xl) var(--space-lg);
+            position: relative;
+        }
+        
+        .section--alt {
+            background: white;
+        }
+        
+        .section__container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .section__header {
+            text-align: center;
+            margin-bottom: var(--space-3xl);
+        }
+        
+        .section__subtitle {
+            font-family: var(--font-accent);
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--color-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-sm);
+            font-style: italic;
+        }
+        
+        .section__title {
+            margin-bottom: var(--space-md);
+        }
+        
+        .section__divider {
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            margin: 0 auto var(--space-md);
+            border-radius: var(--radius-full);
+        }
+        
+        .section__description {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.125rem;
+            color: var(--color-gray-500);
+        }
+        
+        /* ========================================
+           ABOUT SECTION
+        ======================================== */
+        .about__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-3xl);
+            align-items: center;
+        }
+        
+        .about__image-wrapper {
+            position: relative;
+        }
+        
+        .about__image {
+            width: 100%;
+            aspect-ratio: 4/5;
+            object-fit: cover;
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .about__decorative-card {
+            position: absolute;
+            bottom: -30px;
+            right: -30px;
+            background: var(--color-primary);
+            color: white;
+            padding: var(--space-lg);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-xl);
+            max-width: 250px;
+        }
+        
+        .about__decorative-icon {
+            font-size: 2.5rem;
+            margin-bottom: var(--space-sm);
+        }
+        
+        .about__decorative-text {
+            font-size: 0.875rem;
+            line-height: 1.5;
+        }
+        
+        .about__content h3 {
+            margin-bottom: var(--space-lg);
+        }
+        
+        .about__text {
+            font-size: 1.0625rem;
+            line-height: 1.8;
+            color: var(--color-gray-700);
+            margin-bottom: var(--space-md);
+        }
+        
+        .about__text strong {
+            color: var(--color-primary-dark);
+            font-weight: 600;
+        }
+        
+        .about__highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-md);
+            margin-top: var(--space-xl);
+        }
+        
+        .about__highlight {
+            background: var(--color-light);
+            padding: var(--space-md);
+            border-radius: var(--radius-md);
+            border-left: 4px solid var(--color-primary);
+        }
+        
+        .about__highlight-icon {
+            font-size: 1.75rem;
+            color: var(--color-primary);
+            margin-bottom: var(--space-xs);
+        }
+        
+        .about__highlight-title {
+            font-weight: 600;
+            color: var(--color-primary-dark);
+            margin-bottom: 0.25rem;
+            font-size: 1rem;
+        }
+        
+        .about__highlight-text {
+            font-size: 0.875rem;
+            color: var(--color-gray-500);
+            margin: 0;
+        }
+        
+        /* ========================================
+           EXPERIENCE SECTION
+        ======================================== */
+        .experience__timeline {
+            position: relative;
+            padding-left: var(--space-2xl);
+        }
+        
+        .experience__timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, 
+                var(--color-primary) 0%, 
+                var(--color-secondary) 50%, 
+                var(--color-accent) 100%
+            );
+            border-radius: var(--radius-full);
+        }
+        
+        .experience__item {
+            position: relative;
+            background: white;
+            padding: var(--space-xl);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--space-xl);
+            box-shadow: var(--shadow-md);
+            transition: all var(--transition-base);
+        }
+        
+        .experience__item:hover {
+            transform: translateX(10px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .experience__item::before {
+            content: '';
+            position: absolute;
+            left: -38px;
+            top: 30px;
+            width: 16px;
+            height: 16px;
+            background: white;
+            border: 4px solid var(--color-primary);
+            border-radius: var(--radius-full);
+            box-shadow: 0 0 0 4px var(--color-cream);
+        }
+        
+        .experience__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: var(--space-md);
+            gap: var(--space-md);
+            flex-wrap: wrap;
+        }
+        
+        .experience__role {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-primary-dark);
+            margin-bottom: var(--space-xs);
+        }
+        
+        .experience__company {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+        
+        .experience__location {
+            font-size: 0.9375rem;
+            color: var(--color-gray-500);
+        }
+        
+        .experience__period {
+            background: var(--color-light);
+            padding: var(--space-xs) var(--space-md);
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            white-space: nowrap;
+        }
+        
+        .experience__description {
+            list-style: none;
+            margin: var(--space-md) 0;
+        }
+        
+        .experience__description li {
+            display: flex;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-sm);
+            color: var(--color-gray-700);
+            line-height: 1.6;
+        }
+        
+        .experience__description li::before {
+            content: '✓';
+            color: var(--color-accent);
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        
+        .experience__tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-xs);
+            margin-top: var(--space-md);
+        }
+        
+        .experience__tag {
+            padding: 0.375rem 0.875rem;
+            background: var(--color-light);
+            border-radius: var(--radius-full);
+            font-size: 0.8125rem;
+            font-weight: 500;
+            color: var(--color-gray-700);
+            border: 1px solid var(--color-gray-100);
+        }
+        
+        /* ========================================
+           SKILLS SECTION
+        ======================================== */
+        .skills__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--space-xl);
+        }
+        
+        .skills__category {
+            background: white;
+            padding: var(--space-xl);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            transition: all var(--transition-base);
+        }
+        
+        .skills__category:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .skills__category-header {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            margin-bottom: var(--space-xl);
+        }
+        
+        .skills__category-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.75rem;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .skills__category-title {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        
+        .skills__list {
+            list-style: none;
+        }
+        
+        .skills__item {
+            margin-bottom: var(--space-md);
+        }
+        
+        .skills__item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: var(--space-xs);
+        }
+        
+        .skills__item-name {
+            font-weight: 600;
+            color: var(--color-gray-700);
+        }
+        
+        .skills__item-level {
+            font-weight: 700;
+            color: var(--color-primary);
+        }
+        
+        .skills__bar {
+            height: 8px;
+            background: var(--color-gray-100);
+            border-radius: var(--radius-full);
+            overflow: hidden;
+        }
+        
+        .skills__bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            border-radius: var(--radius-full);
+            transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+            width: 0;
+        }
+        
+        .skills__bar-fill.animate {
+            width: var(--skill-width);
+        }
+        
+        /* ========================================
+           CERTIFICATIONS
+        ======================================== */
+        .certifications__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-2xl);
+        }
+        
+        .certification__card {
+            background: white;
+            padding: var(--space-lg);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+            transition: all var(--transition-base);
+            border: 2px solid transparent;
+        }
+        
+        .certification__card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--color-primary);
+        }
+        
+        .certification__icon {
+            width: 64px;
+            height: 64px;
+            background: var(--color-light);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--space-md);
+            font-size: 1.75rem;
+            color: var(--color-primary);
+        }
+        
+        .certification__title {
+            font-weight: 600;
+            color: var(--color-primary-dark);
+            margin-bottom: var(--space-xs);
+            font-size: 1rem;
+        }
+        
+        .certification__issuer {
+            font-size: 0.875rem;
+            color: var(--color-gray-500);
+        }
+        
+        /* ========================================
+           PROJECTS SECTION
+        ======================================== */
+        .projects__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--space-xl);
+        }
+        
+        .project__card {
+            background: white;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: all var(--transition-base);
+        }
+        
+        .project__card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .project__header {
+            padding: var(--space-lg);
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+            color: white;
+        }
+        
+        .project__icon {
+            width: 56px;
+            height: 56px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: var(--space-md);
+        }
+        
+        .project__title {
+            font-size: 1.5rem;
+            color: white;
+            margin-bottom: var(--space-xs);
+        }
+        
+        .project__body {
+            padding: var(--space-lg);
+        }
+        
+        .project__description {
+            color: var(--color-gray-700);
+            line-height: 1.7;
+            margin-bottom: var(--space-md);
+        }
+        
+        .project__tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-xs);
+        }
+        
+        .project__tag {
+            padding: 0.375rem 0.875rem;
+            background: var(--color-light);
+            border-radius: var(--radius-full);
+            font-size: 0.8125rem;
+            font-weight: 500;
+            color: var(--color-primary);
+        }
+        
+        /* ========================================
+           CONTACT SECTION
+        ======================================== */
+        .contact__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-3xl);
+        }
+        
+        .contact__info h3 {
+            margin-bottom: var(--space-md);
+        }
+        
+        .contact__description {
+            margin-bottom: var(--space-xl);
+        }
+        
+        .contact__methods {
+            list-style: none;
+        }
+        
+        .contact__method {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-md);
+            margin-bottom: var(--space-lg);
+            padding: var(--space-md);
+            background: white;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            transition: all var(--transition-base);
+        }
+        
+        .contact__method:hover {
+            transform: translateX(8px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .contact__method-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+        
+        .contact__method-label {
+            font-weight: 600;
+            color: var(--color-gray-700);
+            margin-bottom: 0.25rem;
+        }
+        
+        .contact__method-value {
+            color: var(--color-primary);
+            font-weight: 500;
+        }
+        
+        .contact__method-value:hover {
+            text-decoration: underline;
+        }
+        
+        .contact__social {
+            display: flex;
+            gap: var(--space-md);
+            margin-top: var(--space-xl);
+            padding-top: var(--space-xl);
+            border-top: 1px solid var(--color-gray-100);
+        }
+        
+        .contact__social-link {
+            width: 56px;
+            height: 56px;
+            background: white;
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--color-primary);
+            box-shadow: var(--shadow-sm);
+            transition: all var(--transition-base);
+        }
+        
+        .contact__social-link:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+            background: var(--color-primary);
+            color: white;
+        }
+        
+        .contact__form {
+            background: white;
+            padding: var(--space-xl);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .form__group {
+            margin-bottom: var(--space-lg);
+        }
+        
+        .form__label {
+            display: block;
+            font-weight: 600;
+            color: var(--color-gray-700);
+            margin-bottom: var(--space-xs);
+        }
+        
+        .form__input,
+        .form__textarea {
+            width: 100%;
+            padding: var(--space-md);
+            border: 2px solid var(--color-gray-100);
+            border-radius: var(--radius-md);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            color: var(--color-gray-900);
+            transition: all var(--transition-base);
+        }
+        
+        .form__input:focus,
+        .form__textarea:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(11, 79, 108, 0.1);
+        }
+        
+        .form__textarea {
+            min-height: 160px;
+            resize: vertical;
+        }
+        
+        .form__submit {
+            width: 100%;
+        }
+        
+        /* ========================================
+           FOOTER
+        ======================================== */
+        .footer {
+            background: var(--color-gray-900);
+            color: var(--color-gray-300);
+            padding: var(--space-3xl) var(--space-lg) var(--space-lg);
+        }
+        
+        .footer__container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .footer__grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-3xl);
+            margin-bottom: var(--space-2xl);
+        }
+        
+        .footer__brand {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-md);
+        }
+        
+        .footer__logo {
+            width: 48px;
+            height: 48px;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+        
+        .footer__logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .footer__brand-text {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .footer__description {
+            color: var(--color-gray-500);
+            line-height: 1.6;
+        }
+        
+        .footer__title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: white;
+            margin-bottom: var(--space-md);
+        }
+        
+        .footer__links {
+            list-style: none;
+        }
+        
+        .footer__link {
+            margin-bottom: var(--space-sm);
+        }
+        
+        .footer__link a {
+            color: var(--color-gray-500);
+            transition: color var(--transition-base);
+        }
+        
+        .footer__link a:hover {
+            color: var(--color-secondary);
+        }
+        
+        .footer__bottom {
+            padding-top: var(--space-xl);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: var(--color-gray-500);
+        }
+        
+        .footer__copyright {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-xs);
+        }
+        
+        .footer__heart {
+            color: #EF4444;
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
+        
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            10%, 30% { transform: scale(0.9); }
+            20%, 40% { transform: scale(1.1); }
+        }
+        
+        /* ========================================
+           RESPONSIVE DESIGN
+        ======================================== */
+        @media (max-width: 1024px) {
+            .hero__container,
+            .about__grid,
+            .contact__grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-2xl);
+            }
+            
+            .hero__image-wrapper {
+                order: -1;
+            }
+            
+            .navbar__menu {
+                display: none;
+            }
+            
+            .navbar__hamburger {
+                display: flex;
+            }
+            
+            .footer__grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            :root {
+                --space-xl: 2rem;
+                --space-2xl: 3rem;
+                --space-3xl: 4rem;
+            }
+            
+            .hero {
+                min-height: auto;
+                padding: var(--space-2xl) var(--space-md);
+            }
+            
+            .section {
+                padding: var(--space-2xl) var(--space-md);
+            }
+            
+            .hero__stats {
+                grid-template-columns: repeat(3, 1fr);
+                gap: var(--space-md);
+            }
+            
+            .about__highlights {
+                grid-template-columns: 1fr;
+            }
+            
+            .experience__timeline {
+                padding-left: var(--space-lg);
+            }
+            
+            .skills__grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .certifications__grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .projects__grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer__grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .navbar__container {
+                padding: var(--space-md);
+            }
+            
+            .navbar__logo {
+                font-size: 1.125rem;
+            }
+            
+            .hero__actions {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+            
+            .hero__stats {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* ========================================
+           UTILITY CLASSES
+        ======================================== */
+        .hidden {
+            display: none !important;
+        }
+        
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--color-light);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-primary);
+            border-radius: var(--radius-full);
+            border: 3px solid var(--color-light);
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--color-primary-dark);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar__container">
+            <a href="#hero" class="navbar__logo">
+                <div class="navbar__logo-icon">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQEq_4xdpuyLDQ/profile-displayphoto-shrink_400_400/B4DZgck0M6HYAg-/0/1752826071748?e=2147483647&v=beta&t=qjretS6rmVj0wkBE2qEJsqKbpm9wXml33L3fe5UuGOA" alt="Osadebamwen Enobakhare">
+                </div>
+                <span class="navbar__logo-text">Osadebamwen Enobakhare</span>
+            </a>
+            
+            <ul class="navbar__menu" id="navMenu">
+                <li><a href="#about" class="navbar__link">About</a></li>
+                <li><a href="#experience" class="navbar__link">Experience</a></li>
+                <li><a href="#skills" class="navbar__link">Skills</a></li>
+                <li><a href="#projects" class="navbar__link">Projects</a></li>
+                <li><a href="#contact" class="navbar__link">Contact</a></li>
+            </ul>
+            
+            <div class="navbar__cta">
+                <a href="https://www.linkedin.com/in/osadebamwen-enobakhare" target="_blank" class="btn btn--icon btn--primary">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <button class="navbar__hamburger" id="hamburger" aria-label="Menu">
+                    <span class="navbar__hamburger-line"></span>
+                    <span class="navbar__hamburger-line"></span>
+                    <span class="navbar__hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero__container">
+            <div class="hero__content">
+                <div class="hero__badge">
+                    <i class="fas fa-heartbeat"></i>
+                    Healthcare Innovation Specialist
+                </div>
+                
+                <h1 class="hero__title">Osadebamwen Enobakhare</h1>
+                
+                <p class="hero__subtitle">
+                    Registered Nurse • Registered Midwife • BLS Certified
+                </p>
+                
+                <p class="hero__description">
+                    Leveraging Data & Innovation to Transform Healthcare Outcomes. 
+                    Passionate about bridging clinical excellence with cutting-edge technology 
+                    to revolutionize patient care across Nigeria.
+                </p>
+                
+                <div class="hero__actions">
+                    <a href="#experience" class="btn btn--primary">
+                        <i class="fas fa-briefcase"></i>
+                        View My Work
+                    </a>
+                    <a href="#contact" class="btn btn--secondary">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                </div>
+                
+                <div class="hero__stats">
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">5+</span>
+                        <span class="hero__stat-label">Years Experience</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">BLS</span>
+                        <span class="hero__stat-label">Certified</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">100%</span>
+                        <span class="hero__stat-label">Patient Focus</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero__image-wrapper">
+                <div class="hero__image-container">
+                    <div class="hero__image-bg"></div>
+                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQEq_4xdpuyLDQ/profile-displayphoto-shrink_400_400/B4DZgck0M6HYAg-/0/1752826071748?e=2147483647&v=beta&t=qjretS6rmVj0wkBE2qEJsqKbpm9wXml33L3fe5UuGOA" 
+                         alt="Osadebamwen Enobakhare" 
+                         class="hero__image">
+                    <div class="hero__badge-float">
+                        <div class="hero__badge-icon">
+                            <i class="fas fa-user-nurse"></i>
+                        </div>
+                        <div>
+                            <div class="hero__badge-text">Lagoon Hospitals</div>
+                            <div class="hero__badge-subtext">Registered Nurse</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section section--alt" id="about">
+        <div class="section__container">
+            <div class="section__header">
+                <p class="section__subtitle">Get to know me</p>
+                <h2 class="section__title">About Me</h2>
+                <div class="section__divider"></div>
+            </div>
+            
+            <div class="about__grid">
+                <div class="about__image-wrapper">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQEq_4xdpuyLDQ/profile-displayphoto-shrink_400_400/B4DZgck0M6HYAg-/0/1752826071748?e=2147483647&v=beta&t=qjretS6rmVj0wkBE2qEJsqKbpm9wXml33L3fe5UuGOA" 
+                         alt="Osadebamwen Enobakhare" 
+                         class="about__image">
+                </div>
+                
+                <div class="about__content">
+                    <h3>Bridging Clinical Excellence with Technology</h3>
+                    
+                    <p class="about__text">
+                        I am a dedicated <strong>Registered Nurse and Registered Midwife</strong> with a deep passion 
+                        for transforming healthcare through innovation, data analytics, and cutting-edge technology. 
+                        Currently serving at <strong>Lagoon Hospitals</strong>, one of Nigeria's premier healthcare 
+                        institutions, I deliver compassionate, evidence-based care while championing digital 
+                        transformation in clinical practice.
+                    </p>
+                    
+                    <p class="about__text">
+                        My journey in healthcare extends beyond bedside care. As an <strong>emerging researcher</strong>, 
+                        I explore how data-driven insights, artificial intelligence, and early warning systems can 
+                        revolutionize patient safety and outcomes. I'm particularly passionate about maternal health, 
+                        emergency response, and leveraging technology to bridge gaps in healthcare delivery across Nigeria.
+                    </p>
+                    
+                    <p class="about__text">
+                        Beyond clinical duties, I actively contribute to public health awareness, particularly in 
+                        areas like <strong>Hepatitis prevention</strong> and healthcare education. I believe in the 
+                        power of knowledge sharing and community engagement to create lasting health impact.
+                    </p>
+                    
+                    <div class="about__highlights">
+                        <div class="about__highlight">
+                            <i class="fas fa-hospital-user about__highlight-icon"></i>
+                            <div class="about__highlight-title">Clinical Excellence</div>
+                            <p class="about__highlight-text">Patient-centered care delivery</p>
+                        </div>
+                        <div class="about__highlight">
+                            <i class="fas fa-chart-line about__highlight-icon"></i>
+                            <div class="about__highlight-title">Data Innovation</div>
+                            <p class="about__highlight-text">Healthcare analytics expertise</p>
+                        </div>
+                        <div class="about__highlight">
+                            <i class="fas fa-microscope about__highlight-icon"></i>
+                            <div class="about__highlight-title">Research Focus</div>
+                            <p class="about__highlight-text">Evidence-based practice</p>
+                        </div>
+                        <div class="about__highlight">
+                            <i class="fas fa-users about__highlight-icon"></i>
+                            <div class="about__highlight-title">Public Health</div>
+                            <p class="about__highlight-text">Community education</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="section__container">
+            <div class="section__header">
+                <p class="section__subtitle">My Journey</p>
+                <h2 class="section__title">Professional Experience</h2>
+                <div class="section__divider"></div>
+                <p class="section__description">
+                    A comprehensive overview of my career in healthcare excellence and innovation
+                </p>
+            </div>
+            
+            <div class="experience__timeline">
+                <!-- Experience Item 1 -->
+                <article class="experience__item reveal">
+                    <div class="experience__header">
+                        <div>
+                            <h3 class="experience__role">Registered Nurse</h3>
+                            <p class="experience__company">Lagoon Hospitals</p>
+                            <p class="experience__location">Lagos, Nigeria</p>
+                        </div>
+                        <span class="experience__period">2020 - Present</span>
+                    </div>
+                    
+                    <ul class="experience__description">
+                        <li>Deliver comprehensive patient care in a premium healthcare setting, ensuring the highest standards of clinical excellence and patient safety</li>
+                        <li>Champion innovative approaches to healthcare delivery, integrating data analytics and technology to improve patient outcomes</li>
+                        <li>Collaborate with multidisciplinary teams to implement evidence-based protocols and early warning systems for critical patient care</li>
+                        <li>Provide expert maternal and neonatal care, combining clinical skills with compassionate patient education</li>
+                        <li>Lead quality improvement initiatives focused on patient safety, clinical documentation, and healthcare innovation</li>
+                    </ul>
+                    
+                    <div class="experience__tags">
+                        <span class="experience__tag">Patient Care</span>
+                        <span class="experience__tag">Clinical Innovation</span>
+                        <span class="experience__tag">Data-Driven Care</span>
+                        <span class="experience__tag">Team Leadership</span>
+                        <span class="experience__tag">Quality Improvement</span>
+                    </div>
+                </article>
+                
+                <!-- Experience Item 2 -->
+                <article class="experience__item reveal">
+                    <div class="experience__header">
+                        <div>
+                            <h3 class="experience__role">Registered Midwife</h3>
+                            <p class="experience__company">Multiple Healthcare Facilities</p>
+                            <p class="experience__location">Nigeria</p>
+                        </div>
+                        <span class="experience__period">2018 - Present</span>
+                    </div>
+                    
+                    <ul class="experience__description">
+                        <li>Provide expert prenatal, intrapartum, and postnatal care, ensuring optimal outcomes for mothers and newborns</li>
+                        <li>Educate expectant mothers on maternal health, nutrition, and safe birthing practices</li>
+                        <li>Conduct health assessments and monitoring throughout pregnancy, labor, and postpartum periods</li>
+                        <li>Advocate for maternal and newborn health through community outreach and public health initiatives</li>
+                    </ul>
+                    
+                    <div class="experience__tags">
+                        <span class="experience__tag">Maternal Health</span>
+                        <span class="experience__tag">Neonatal Care</span>
+                        <span class="experience__tag">Patient Education</span>
+                        <span class="experience__tag">Community Health</span>
+                    </div>
+                </article>
+                
+                <!-- Experience Item 3 -->
+                <article class="experience__item reveal">
+                    <div class="experience__header">
+                        <div>
+                            <h3 class="experience__role">Emerging Healthcare Researcher</h3>
+                            <p class="experience__company">Independent Research & Innovation</p>
+                        </div>
+                        <span class="experience__period">Ongoing</span>
+                    </div>
+                    
+                    <ul class="experience__description">
+                        <li>Investigate the application of AI and machine learning in early warning systems for patient deterioration</li>
+                        <li>Explore data analytics methodologies to identify trends and improve clinical decision-making</li>
+                        <li>Contribute to knowledge sharing through public health awareness campaigns on Hepatitis and other preventable diseases</li>
+                        <li>Develop frameworks for integrating digital health solutions into traditional healthcare settings</li>
+                    </ul>
+                    
+                    <div class="experience__tags">
+                        <span class="experience__tag">Healthcare AI</span>
+                        <span class="experience__tag">Data Analytics</span>
+                        <span class="experience__tag">Research</span>
+                        <span class="experience__tag">Public Health</span>
+                        <span class="experience__tag">Digital Health</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section--alt" id="skills">
+        <div class="section__container">
+            <div class="section__header">
+                <p class="section__subtitle">Expertise</p>
+                <h2 class="section__title">Skills & Competencies</h2>
+                <div class="section__divider"></div>
+                <p class="section__description">
+                    A comprehensive blend of clinical and technical competencies
+                </p>
+            </div>
+            
+            <div class="skills__grid">
+                <!-- Clinical Skills -->
+                <div class="skills__category reveal">
+                    <div class="skills__category-header">
+                        <div class="skills__category-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3 class="skills__category-title">Clinical Skills</h3>
+                    </div>
+                    
+                    <ul class="skills__list">
+                        <li class="skills__item">
+                            <div class="skills__item-header">
+                                <span class="skills__item-name">Patient Assessment</span>
+                                <span class="skills__item-level">95%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__bar-fill" style="--skill-width: 95%"></div>
+                            </div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item-header">
+                                <span class="skills__item-name">Midwifery Care</span>
+                                <span class="skills__item-level">90%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__bar-fill" style="--skill-width: 90%"></div>
+                            </div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item-header">
+                                <span class="skills__item-name">Emergency Response (BLS)</span>
+                                <span class="skills__item-level">92%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__bar-fill" style="--skill-width: 92%"></div>
+                            </div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item-header">
+                                <span class="skills__item-name">Medication Administration</span>
+                                <span class="skills__item-level">93%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__bar-fill" style="--skill-width: 93%"></div>
+                            </div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item-header">
+                                <span class="skills__item-name">Patient Education</span>
+                                <span class="skills__item-level">88%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__bar-fill" style="--skill-width: 88%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Technical Skills -->
+                <div class="skills__category reveal">
+                    <div class="skills__category-header">
+                        <div class="skills__category-icon">
+                            <i class="fas fa-laptop-medical"></i>
+                        </div>
+                        <h3 class="skills__category-title">Technical Skills</h3>
+                    </div>
+                    
+                    <ul class="skills__list">
+                        <li class="skills__item">
+                            <div class="skills__item-header">
+                                <span class="skills__item-name">Healthcare Data Analysis</span>
+                                <span class="skills__item-level">85%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__bar-fill" style="--skill-width: 85%"></div>
+                            </div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item-header">
+                                <span class="skills__item-name">Digital Health Innovation</span>
+                                <span class="skills__item-level">80%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__bar-fill" style="--skill-width: 80%"></div>
+                            </div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item-header">
+                                <span class="skills__item-name">Electronic Health Records</span>
+                                <span class="skills__item-level">87%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__bar-fill" style="--skill-width: 87%"></div>
+                            </div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item-header">
+                                <span class="skills__item-name">AI in Healthcare</span>
+                                <span class="skills__item-level">75%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__bar-fill" style="--skill-width: 75%"></div>
+                            </div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item-header">
+                                <span class="skills__item-name">Quality Improvement Systems</span>
+                                <span class="skills__item-level">82%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__bar-fill" style="--skill-width: 82%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Research & Leadership -->
+                <div class="skills__category reveal">
+                    <div class="skills__category-header">
+                        <div class="skills__category-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="skills__category-title">Research & Leadership</h3>
+                    </div>
+                    
+                    <ul class="skills__list">
+                        <li class="skills__item">
+                            <div class="skills__item-header">
+                                <span class="skills__item-name">Clinical Research</span>
+                                <span class="skills__item-level">78%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__bar-fill" style="--skill-width: 78%"></div>
+                            </div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item-header">
+                                <span class="skills__item-name">Team Leadership</span>
+                                <span class="skills__item-level">90%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__bar-fill" style="--skill-width: 90%"></div>
+                            </div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item-header">
+                                <span class="skills__item-name">Communication</span>
+                                <span class="skills__item-level">94%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__bar-fill" style="--skill-width: 94%"></div>
+                            </div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item-header">
+                                <span class="skills__item-name">Public Health Advocacy</span>
+                                <span class="skills__item-level">86%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__bar-fill" style="--skill-width: 86%"></div>
+                            </div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item-header">
+                                <span class="skills__item-name">Critical Thinking</span>
+                                <span class="skills__item-level">91%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__bar-fill" style="--skill-width: 91%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Certifications -->
+            <div class="certifications__grid">
+                <div class="certification__card reveal">
+                    <div class="certification__icon">
+                        <i class="fas fa-heart-pulse"></i>
+                    </div>
+                    <h4 class="certification__title">BLS Certified</h4>
+                    <p class="certification__issuer">Basic Life Support</p>
+                </div>
+                
+                <div class="certification__card reveal">
+                    <div class="certification__icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h4 class="certification__title">Registered Nurse</h4>
+                    <p class="certification__issuer">Nigeria Nursing Council</p>
+                </div>
+                
+                <div class="certification__card reveal">
+                    <div class="certification__icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h4 class="certification__title">Registered Midwife</h4>
+                    <p class="certification__issuer">Midwifery Certification</p>
+                </div>
+                
+                <div class="certification__card reveal">
+                    <div class="certification__icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h4 class="certification__title">Continued Education</h4>
+                    <p class="certification__issuer">Professional Development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="section__container">
+            <div class="section__header">
+                <p class="section__subtitle">Innovation</p>
+                <h2 class="section__title">Projects & Initiatives</h2>
+                <div class="section__divider"></div>
+                <p class="section__description">
+                    Contributions to healthcare advancement through research and innovation
+                </p>
+            </div>
+            
+            <div class="projects__grid">
+                <!-- Project 1 -->
+                <article class="project__card reveal">
+                    <div class="project__header">
+                        <div class="project__icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="project__title">AI-Powered Early Warning Systems</h3>
+                    </div>
+                    <div class="project__body">
+                        <p class="project__description">
+                            Researching the integration of artificial intelligence and machine learning 
+                            algorithms to predict patient deterioration and enable proactive clinical interventions.
+                        </p>
+                        <div class="project__tags">
+                            <span class="project__tag">AI/ML</span>
+                            <span class="project__tag">Patient Safety</span>
+                            <span class="project__tag">Research</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project 2 -->
+                <article class="project__card reveal">
+                    <div class="project__header">
+                        <div class="project__icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3 class="project__title">Healthcare Data Analytics</h3>
+                    </div>
+                    <div class="project__body">
+                        <p class="project__description">
+                            Leveraging data analytics to identify clinical trends, optimize resource allocation, 
+                            and support evidence-based decision-making in hospital settings.
+                        </p>
+                        <div class="project__tags">
+                            <span class="project__tag">Data Science</span>
+                            <span class="project__tag">Analytics</span>
+                            <span class="project__tag">Innovation</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project 3 -->
+                <article class="project__card reveal">
+                    <div class="project__header">
+                        <div class="project__icon">
+                            <i class="fas fa-viruses"></i>
+                        </div>
+                        <h3 class="project__title">Hepatitis Awareness Campaign</h3>
+                    </div>
+                    <div class="project__body">
+                        <p class="project__description">
+                            Public health initiative focused on education, prevention, and early detection 
+                            of Hepatitis, particularly targeting underserved communities in Nigeria.
+                        </p>
+                        <div class="project__tags">
+                            <span class="project__tag">Public Health</span>
+                            <span class="project__tag">Education</span>
+                            <span class="project__tag">Advocacy</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project 4 -->
+                <article class="project__card reveal">
+                    <div class="project__header">
+                        <div class="project__icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="project__title">Digital Health Transformation</h3>
+                    </div>
+                    <div class="project__body">
+                        <p class="project__description">
+                            Exploring innovative digital solutions to improve healthcare delivery, patient 
+                            engagement, and clinical workflows in resource-constrained settings.
+                        </p>
+                        <div class="project__tags">
+                            <span class="project__tag">Digital Health</span>
+                            <span class="project__tag">mHealth</span>
+                            <span class="project__tag">Innovation</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project 5 -->
+                <article class="project__card reveal">
+                    <div class="project__header">
+                        <div class="project__icon">
+                            <i class="fas fa-female"></i>
+                        </div>
+                        <h3 class="project__title">Maternal Health Optimization</h3>
+                    </div>
+                    <div class="project__body">
+                        <p class="project__description">
+                            Developing evidence-based protocols and educational programs to reduce maternal 
+                            and neonatal mortality through comprehensive prenatal care.
+                        </p>
+                        <div class="project__tags">
+                            <span class="project__tag">Maternal Health</span>
+                            <span class="project__tag">Midwifery</span>
+                            <span class="project__tag">Quality Care</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project 6 -->
+                <article class="project__card reveal">
+                    <div class="project__header">
+                        <div class="project__icon">
+                            <i class="fas fa-book-medical"></i>
+                        </div>
+                        <h3 class="project__title">Knowledge Sharing & Leadership</h3>
+                    </div>
+                    <div class="project__body">
+                        <p class="project__description">
+                            Active contribution to healthcare discourse through publications, presentations, 
+                            and social media engagement on clinical best practices and innovations.
+                        </p>
+                        <div class="project__tags">
+                            <span class="project__tag">Education</span>
+                            <span class="project__tag">Leadership</span>
+                            <span class="project__tag">Community</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section--alt" id="contact">
+        <div class="section__container">
+            <div class="section__header">
+                <p class="section__subtitle">Let's Connect</p>
+                <h2 class="section__title">Get In Touch</h2>
+                <div class="section__divider"></div>
+                <p class="section__description">
+                    Let's collaborate on healthcare innovation and excellence
+                </p>
+            </div>
+            
+            <div class="contact__grid">
+                <div class="contact__info">
+                    <h3>Contact Information</h3>
+                    <p class="contact__description">
+                        I'm always open to discussing healthcare innovation, research collaboration, 
+                        or professional opportunities. Feel free to reach out!
+                    </p>
+                    
+                    <ul class="contact__methods">
+                        <li class="contact__method">
+                            <div class="contact__method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="contact__method-label">Email</div>
+                                <a href="/cdn-cgi/l/email-protection#aec1ddcfcacbcccfcbc0c1cccfeec9c3cfc7c280cdc1c3" class="contact__method-value">
+                                    <span class="__cf_email__" data-cfemail="d1bea2b0b5b4b3b0b4bfbeb3b091b6bcb0b8bdffb2bebc">[email&#160;protected]</span>
+                                </a>
+                            </div>
+                        </li>
+                        
+                        <li class="contact__method">
+                            <div class="contact__method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <div class="contact__method-label">Phone</div>
+                                <a href="tel:+2349067300948" class="contact__method-value">
+                                    +234 906 730 0948
+                                </a>
+                            </div>
+                        </li>
+                        
+                        <li class="contact__method">
+                            <div class="contact__method-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div>
+                                <div class="contact__method-label">LinkedIn</div>
+                                <a href="https://www.linkedin.com/in/osadebamwen-enobakhare" target="_blank" class="contact__method-value">
+                                    linkedin.com/in/osadebamwen-enobakhare
+                                </a>
+                            </div>
+                        </li>
+                        
+                        <li class="contact__method">
+                            <div class="contact__method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <div class="contact__method-label">Location</div>
+                                <div class="contact__method-value">Lagos, Nigeria</div>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <div class="contact__social">
+                        <a href="https://www.linkedin.com/in/osadebamwen-enobakhare" target="_blank" class="contact__social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="/cdn-cgi/l/email-protection#bbd4c8dadfded9daded5d4d9dafbdcd6dad2d795d8d4d6" class="contact__social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+2349067300948" class="contact__social-link">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact__form">
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Full Name</label>
+                            <input type="text" id="name" name="name" class="form__input" required>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form__input" required>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="subject" class="form__label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form__input" required>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="message" class="form__label">Message</label>
+                            <textarea id="message" name="message" class="form__textarea" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary form__submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__grid">
+                <div>
+                    <div class="footer__brand">
+                        <div class="footer__logo"><img src="https://media.licdn.com/dms/image/v2/D4D03AQEq_4xdpuyLDQ/profile-displayphoto-shrink_400_400/B4DZgck0M6HYAg-/0/1752826071748?e=2147483647&v=beta&t=qjretS6rmVj0wkBE2qEJsqKbpm9wXml33L3fe5UuGOA" alt="Osadebamwen Enobakhare" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-md);"></div>
+                        <span class="footer__brand-text">Osadebamwen Enobakhare</span>
+                    </div>
+                    <p class="footer__description">
+                        Registered Nurse & Midwife dedicated to advancing healthcare through 
+                        innovation, data, and compassionate care.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2025 Osadebamwen Enobakhare. All rights reserved. 
+                    <span>Designed with <i class="fas fa-heart footer__heart"></i> for Healthcare Excellence</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // ========================================
+        // NAVBAR SCROLL EFFECT
+        // ========================================
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // ========================================
+        // MOBILE MENU TOGGLE
+        // ========================================
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('hidden');
+        });
+        
+        // Close menu when link is clicked
+        document.querySelectorAll('.navbar__link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.add('hidden');
+            });
+        });
+        
+        // ========================================
+        // SMOOTH SCROLLING
+        // ========================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // ========================================
+        // REVEAL ON SCROLL ANIMATION
+        // ========================================
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealOnScroll = () => {
+            const windowHeight = window.innerHeight;
+            const revealPoint = 100;
+            
+            revealElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                
+                if (elementTop < windowHeight - revealPoint) {
+                    element.classList.add('active');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll(); // Initial check
+        
+        // ========================================
+        // ANIMATE SKILL BARS
+        // ========================================
+        const animateSkillBars = () => {
+            const skillBars = document.querySelectorAll('.skills__bar-fill');
+            
+            skillBars.forEach(bar => {
+                const rect = bar.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+                
+                if (rect.top < windowHeight && rect.bottom > 0) {
+                    bar.classList.add('animate');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', animateSkillBars);
+        animateSkillBars(); // Initial check
+        
+        // ========================================
+        // FORM SUBMISSION HANDLER
+        // =========
