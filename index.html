@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Osadebamwen Enobakhare - Registered Nurse | BLS Certified | Emerging Researcher | Leveraging Data & Innovation to Improve Healthcare Outcomes">
+    <meta name="keywords" content="Registered Nurse, Midwife, Healthcare Innovation, Data Analysis, BLS Certified, Nigeria Healthcare">
+    <meta name="author" content="Osadebamwen Enobakhare">
+    <title>Osadebamwen Enobakhare | RN &bull; Healthcare Innovator</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Portfolio Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Force full visibility on every element -->
+    <style>
+        * {
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================================
+         NAVIGATION BAR
+    ============================================================ -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar__container">
+
+            <!-- Logo -->
+            <a href="#hero" class="navbar__logo">
+                <span class="navbar__logo-text">Osadebamwen Enobakhare</span>
+            </a>
+
+            <!-- Desktop Menu (hidden on tablet/mobile via CSS) -->
+            <ul class="navbar__menu" id="navMenu">
+                <li><a href="#about"      class="navbar__link">About</a></li>
+                <li><a href="#experience" class="navbar__link">Experience</a></li>
+                <li><a href="#skills"     class="navbar__link">Skills</a></li>
+                <li><a href="#projects"   class="navbar__link">Projects</a></li>
+                <li><a href="#contact"    class="navbar__link">Contact</a></li>
+            </ul>
+
+            <!-- Right side: Hamburger only -->
+            <div class="navbar__cta">
+                <button class="navbar__hamburger"
+                        id="hamburger"
+                        aria-label="Open navigation menu"
+                        aria-expanded="false"
+                        aria-controls="mobileMenu">
+                    <span class="navbar__hamburger-line"></span>
+                    <span class="navbar__hamburger-line"></span>
+                    <span class="navbar__hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown (toggled by JS) -->
+        <div class="navbar__mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+            <a href="#about"      class="navbar__mobile-link">About</a>
+            <a href="#experience" class="navbar__mobile-link">Experience</a>
+            <a href="#skills"     class="navbar__mobile-link">Skills</a>
+            <a href="#projects"   class="navbar__mobile-link">Projects</a>
+            <a href="#contact"    class="navbar__mobile-link">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- ============================================================
+         HERO SECTION
+    ============================================================ -->
+    <section class="hero" id="hero">
+        <div class="hero__container">
+
+            <!-- Text Content -->
+            <div class="hero__content">
+                <div class="hero__badge">
+                    <i class="fas fa-heartbeat"></i>
+                    Healthcare Innovation Specialist
+                </div>
+
+                <h1 class="hero__title">Osadebamwen Enobakhare</h1>
+
+                <p class="hero__subtitle">
+                    Registered Nurse &bull; Registered Midwife &bull; BLS Certified
+                </p>
+
+                <p class="hero__description">
+                    Leveraging Data &amp; Innovation to Transform Healthcare Outcomes.
+                    Passionate about bridging clinical excellence with cutting-edge technology
+                    to revolutionize patient care across Nigeria.
+                </p>
+
+                <div class="hero__actions">
+                    <a href="#experience" class="btn btn--primary">
+                        <i class="fas fa-briefcase"></i>
+                        View My Work
+                    </a>
+                    <a href="#contact" class="btn btn--secondary">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                </div>
+
+                <div class="hero__stats">
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">5+</span>
+                        <span class="hero__stat-label">Years Experience</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">BLS</span>
+                        <span class="hero__stat-label">Certified</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">100%</span>
+                        <span class="hero__stat-label">Patient Focus</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Image -->
+            <div class="hero__image-wrapper">
+                <div class="hero__image-container">
+                    <div class="hero__image-bg"></div>
+                    <img src="https://media.licdn.com/dms/image/v2/D4D22AQFzVGhcvD15AQ/feedshare-shrink_2048_1536/B4DZrZ.ibwJcAw-/0/1764593642565?e=1772668800&v=beta&t=q7BsqJlKux8KoU6AplQysizfUcYJh3PxdWATZrMQMdI"
+                         alt="Osadebamwen Enobakhare"
+                         class="hero__image" style="max-width:420px;">
+                    <div class="hero__badge-float">
+                        <div class="hero__badge-icon">
+                            <i class="fas fa-user-nurse"></i>
+                        </div>
+                        <div>
+                            <div class="hero__badge-text">Lagoon Hospitals</div>
+                            <div class="hero__badge-subtext">Registered Nurse</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         ABOUT SECTION
+    ============================================================ -->
+    <section class="section section--alt" id="about">
+        <div class="section__container">
+
+            <div class="section__header">
+                <p class="section__subtitle">Get to know me</p>
+                <h2 class="section__title">About Me</h2>
+                <div class="section__divider"></div>
+            </div>
+
+            <div class="about__grid">
+                <div class="about__image-wrapper">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D22AQGS0T51p3R5Yg/feedshare-shrink_1280/B4DZwifjf3IgAc-/0/1770105223692?e=1772668800&v=beta&t=RYH_Abs8NxwHrlKE7J021TUzUpLgEs3JzHrUdRycRPs"
+                         alt="Osadebamwen Enobakhare"
+                         class="about__image" style="max-width:480px;width:90%;">
+                </div>
+
+                <div class="about__content">
+                    <h3>Bridging Clinical Excellence with Technology</h3>
+
+                    <p class="about__text">
+                        I am a dedicated <strong>Registered Nurse and Registered Midwife</strong> with a deep passion
+                        for transforming healthcare through innovation, data analytics, and cutting-edge technology.
+                        Currently serving at <strong>Lagoon Hospitals</strong>, one of Nigeria's premier healthcare
+                        institutions, I deliver compassionate, evidence-based care while championing digital
+                        transformation in clinical practice.
+                    </p>
+                    <p class="about__text">
+                        My journey in healthcare extends beyond bedside care. As an <strong>emerging researcher</strong>,
+                        I explore how data-driven insights, artificial intelligence, and early warning systems can
+                        revolutionize patient safety and outcomes. I'm particularly passionate about maternal health,
+                        emergency response, and leveraging technology to bridge gaps in healthcare delivery across Nigeria.
+                    </p>
+                    <p class="about__text">
+                        Beyond clinical duties, I actively contribute to public health awareness, particularly in areas
+                        like <strong>Hepatitis prevention</strong> and healthcare education. I believe in the power of
+                        knowledge sharing and community engagement to create lasting health impact.
+                    </p>
+
+                    <div class="about__highlights">
+                        <div class="about__highlight">
+                            <i class="fas fa-hospital-user about__highlight-icon"></i>
+                            <div class="about__highlight-title">Clinical Excellence</div>
+                            <p class="about__highlight-text">Patient-centered care delivery</p>
+                        </div>
+                        <div class="about__highlight">
+                            <i class="fas fa-chart-line about__highlight-icon"></i>
+                            <div class="about__highlight-title">Data Innovation</div>
+                            <p class="about__highlight-text">Healthcare analytics expertise</p>
+                        </div>
+                        <div class="about__highlight">
+                            <i class="fas fa-microscope about__highlight-icon"></i>
+                            <div class="about__highlight-title">Research Focus</div>
+                            <p class="about__highlight-text">Evidence-based practice</p>
+                        </div>
+                        <div class="about__highlight">
+                            <i class="fas fa-users about__highlight-icon"></i>
+                            <div class="about__highlight-title">Public Health</div>
+                            <p class="about__highlight-text">Community education</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         EXPERIENCE SECTION
+    ============================================================ -->
+    <section class="section" id="experience">
+        <div class="section__container">
+
+            <div class="section__header">
+                <p class="section__subtitle">My Journey</p>
+                <h2 class="section__title">Professional Experience</h2>
+                <div class="section__divider"></div>
+                <p class="section__description">A comprehensive overview of my career in healthcare excellence and innovation</p>
+            </div>
+
+            <div class="experience__timeline">
+
+                <article class="experience__item reveal">
+                    <div class="experience__header">
+                        <div>
+                            <h3 class="experience__role">Registered Nurse</h3>
+                            <p class="experience__company">Lagoon Hospitals</p>
+                            <p class="experience__location">Lagos, Nigeria</p>
+                        </div>
+                        <span class="experience__period">2020 &ndash; Present</span>
+                    </div>
+                    <ul class="experience__description">
+                        <li>Deliver comprehensive patient care in a premium healthcare setting, ensuring the highest standards of clinical excellence and patient safety</li>
+                        <li>Champion innovative approaches to healthcare delivery, integrating data analytics and technology to improve patient outcomes</li>
+                        <li>Collaborate with multidisciplinary teams to implement evidence-based protocols and early warning systems for critical patient care</li>
+                        <li>Provide expert maternal and neonatal care, combining clinical skills with compassionate patient education</li>
+                        <li>Lead quality improvement initiatives focused on patient safety, clinical documentation, and healthcare innovation</li>
+                    </ul>
+                    <div class="experience__tags">
+                        <span class="experience__tag">Patient Care</span>
+                        <span class="experience__tag">Clinical Innovation</span>
+                        <span class="experience__tag">Data-Driven Care</span>
+                        <span class="experience__tag">Team Leadership</span>
+                        <span class="experience__tag">Quality Improvement</span>
+                    </div>
+                </article>
+
+                <article class="experience__item reveal">
+                    <div class="experience__header">
+                        <div>
+                            <h3 class="experience__role">Registered Midwife</h3>
+                            <p class="experience__company">Multiple Healthcare Facilities</p>
+                            <p class="experience__location">Nigeria</p>
+                        </div>
+                        <span class="experience__period">2018 &ndash; Present</span>
+                    </div>
+                    <ul class="experience__description">
+                        <li>Provide expert prenatal, intrapartum, and postnatal care, ensuring optimal outcomes for mothers and newborns</li>
+                        <li>Educate expectant mothers on maternal health, nutrition, and safe birthing practices</li>
+                        <li>Conduct health assessments and monitoring throughout pregnancy, labor, and postpartum periods</li>
+                        <li>Advocate for maternal and newborn health through community outreach and public health initiatives</li>
+                    </ul>
+                    <div class="experience__tags">
+                        <span class="experience__tag">Maternal Health</span>
+                        <span class="experience__tag">Neonatal Care</span>
+                        <span class="experience__tag">Patient Education</span>
+                        <span class="experience__tag">Community Health</span>
+                    </div>
+                </article>
+
+                <article class="experience__item reveal">
+                    <div class="experience__header">
+                        <div>
+                            <h3 class="experience__role">Emerging Healthcare Researcher</h3>
+                            <p class="experience__company">Independent Research &amp; Innovation</p>
+                        </div>
+                        <span class="experience__period">Ongoing</span>
+                    </div>
+                    <ul class="experience__description">
+                        <li>Investigate the application of AI and machine learning in early warning systems for patient deterioration</li>
+                        <li>Explore data analytics methodologies to identify trends and improve clinical decision-making</li>
+                        <li>Contribute to knowledge sharing through public health awareness campaigns on Hepatitis and other preventable diseases</li>
+                        <li>Develop frameworks for integrating digital health solutions into traditional healthcare settings</li>
+                    </ul>
+                    <div class="experience__tags">
+                        <span class="experience__tag">Healthcare AI</span>
+                        <span class="experience__tag">Data Analytics</span>
+                        <span class="experience__tag">Research</span>
+                        <span class="experience__tag">Public Health</span>
+                        <span class="experience__tag">Digital Health</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         SKILLS SECTION
+    ============================================================ -->
+    <section class="section section--alt" id="skills">
+        <div class="section__container">
+
+            <div class="section__header">
+                <p class="section__subtitle">Expertise</p>
+                <h2 class="section__title">Skills &amp; Competencies</h2>
+                <div class="section__divider"></div>
+                <p class="section__description">A comprehensive blend of clinical and technical competencies</p>
+            </div>
+
+            <div class="skills__grid">
+
+                <!-- Clinical -->
+                <div class="skills__category reveal">
+                    <div class="skills__category-header">
+                        <div class="skills__category-icon"><i class="fas fa-user-md"></i></div>
+                        <h3 class="skills__category-title">Clinical Skills</h3>
+                    </div>
+                    <ul class="skills__list">
+                        <li class="skills__item">
+                            <div class="skills__item-header"><span class="skills__item-name">Patient Assessment</span><span class="skills__item-level">95%</span></div>
+                            <div class="skills__bar"><div class="skills__bar-fill" style="--skill-width:95%"></div></div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item-header"><span class="skills__item-name">Midwifery Care</span><span class="skills__item-level">90%</span></div>
+                            <div class="skills__bar"><div class="skills__bar-fill" style="--skill-width:90%"></div></div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item-header"><span class="skills__item-name">Emergency Response (BLS)</span><span class="skills__item-level">92%</span></div>
+                            <div class="skills__bar"><div class="skills__bar-fill" style="--skill-width:92%"></div></div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item-header"><span class="skills__item-name">Medication Administration</span><span class="skills__item-level">93%</span></div>
+                            <div class="skills__bar"><div class="skills__bar-fill" style="--skill-width:93%"></div></div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item-header"><span class="skills__item-name">Patient Education</span><span class="skills__item-level">88%</span></div>
+                            <div class="skills__bar"><div class="skills__bar-fill" style="--skill-width:88%"></div></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Technical -->
+                <div class="skills__category reveal">
+                    <div class="skills__category-header">
+                        <div class="skills__category-icon"><i class="fas fa-laptop-medical"></i></div>
+                        <h3 class="skills__category-title">Technical Skills</h3>
+                    </div>
+                    <ul class="skills__list">
+                        <li class="skills__item">
+                            <div class="skills__item-header"><span class="skills__item-name">Healthcare Data Analysis</span><span class="skills__item-level">85%</span></div>
+                            <div class="skills__bar"><div class="skills__bar-fill" style="--skill-width:85%"></div></div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item-header"><span class="skills__item-name">Digital Health Innovation</span><span class="skills__item-level">80%</span></div>
+                            <div class="skills__bar"><div class="skills__bar-fill" style="--skill-width:80%"></div></div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item-header"><span class="skills__item-name">Electronic Health Records</span><span class="skills__item-level">87%</span></div>
+                            <div class="skills__bar"><div class="skills__bar-fill" style="--skill-width:87%"></div></div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item-header"><span class="skills__item-name">AI in Healthcare</span><span class="skills__item-level">75%</span></div>
+                            <div class="skills__bar"><div class="skills__bar-fill" style="--skill-width:75%"></div></div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item-header"><span class="skills__item-name">Quality Improvement Systems</span><span class="skills__item-level">82%</span></div>
+                            <div class="skills__bar"><div class="skills__bar-fill" style="--skill-width:82%"></div></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Research & Leadership -->
+                <div class="skills__category reveal">
+                    <div class="skills__category-header">
+                        <div class="skills__category-icon"><i class="fas fa-brain"></i></div>
+                        <h3 class="skills__category-title">Research &amp; Leadership</h3>
+                    </div>
+                    <ul class="skills__list">
+                        <li class="skills__item">
+                            <div class="skills__item-header"><span class="skills__item-name">Clinical Research</span><span class="skills__item-level">78%</span></div>
+                            <div class="skills__bar"><div class="skills__bar-fill" style="--skill-width:78%"></div></div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item-header"><span class="skills__item-name">Team Leadership</span><span class="skills__item-level">90%</span></div>
+                            <div class="skills__bar"><div class="skills__bar-fill" style="--skill-width:90%"></div></div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item-header"><span class="skills__item-name">Communication</span><span class="skills__item-level">94%</span></div>
+                            <div class="skills__bar"><div class="skills__bar-fill" style="--skill-width:94%"></div></div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item-header"><span class="skills__item-name">Public Health Advocacy</span><span class="skills__item-level">86%</span></div>
+                            <div class="skills__bar"><div class="skills__bar-fill" style="--skill-width:86%"></div></div>
+                        </li>
+                        <li class="skills__item">
+                            <div class="skills__item-header"><span class="skills__item-name">Critical Thinking</span><span class="skills__item-level">91%</span></div>
+                            <div class="skills__bar"><div class="skills__bar-fill" style="--skill-width:91%"></div></div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Certifications -->
+            <div class="certifications__grid">
+                <div class="certification__card reveal">
+                    <div class="certification__icon"><i class="fas fa-heart-pulse"></i></div>
+                    <h4 class="certification__title">BLS Certified</h4>
+                    <p class="certification__issuer">Basic Life Support</p>
+                </div>
+                <div class="certification__card reveal">
+                    <div class="certification__icon"><i class="fas fa-certificate"></i></div>
+                    <h4 class="certification__title">Registered Nurse</h4>
+                    <p class="certification__issuer">Nigeria Nursing Council</p>
+                </div>
+                <div class="certification__card reveal">
+                    <div class="certification__icon"><i class="fas fa-baby"></i></div>
+                    <h4 class="certification__title">Registered Midwife</h4>
+                    <p class="certification__issuer">Midwifery Certification</p>
+                </div>
+                <div class="certification__card reveal">
+                    <div class="certification__icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h4 class="certification__title">Continued Education</h4>
+                    <p class="certification__issuer">Professional Development</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         PROJECTS SECTION
+    ============================================================ -->
+    <section class="section" id="projects">
+        <div class="section__container">
+
+            <div class="section__header">
+                <p class="section__subtitle">Innovation</p>
+                <h2 class="section__title">Projects &amp; Initiatives</h2>
+                <div class="section__divider"></div>
+                <p class="section__description">Contributions to healthcare advancement through research and innovation</p>
+            </div>
+
+            <div class="projects__grid">
+
+                <article class="project__card reveal">
+                    <div class="project__header">
+                        <div class="project__icon"><i class="fas fa-robot"></i></div>
+                        <h3 class="project__title">AI-Powered Early Warning Systems</h3>
+                    </div>
+                    <div class="project__body">
+                        <p class="project__description">Researching the integration of artificial intelligence and machine learning algorithms to predict patient deterioration and enable proactive clinical interventions.</p>
+                        <div class="project__tags">
+                            <span class="project__tag">AI/ML</span>
+                            <span class="project__tag">Patient Safety</span>
+                            <span class="project__tag">Research</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project__card reveal">
+                    <div class="project__header">
+                        <div class="project__icon"><i class="fas fa-chart-bar"></i></div>
+                        <h3 class="project__title">Healthcare Data Analytics</h3>
+                    </div>
+                    <div class="project__body">
+                        <p class="project__description">Leveraging data analytics to identify clinical trends, optimize resource allocation, and support evidence-based decision-making in hospital settings.</p>
+                        <div class="project__tags">
+                            <span class="project__tag">Data Science</span>
+                            <span class="project__tag">Analytics</span>
+                            <span class="project__tag">Innovation</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project__card reveal">
+                    <div class="project__header">
+                        <div class="project__icon"><i class="fas fa-viruses"></i></div>
+                        <h3 class="project__title">Hepatitis Awareness Campaign</h3>
+                    </div>
+                    <div class="project__body">
+                        <p class="project__description">Public health initiative focused on education, prevention, and early detection of Hepatitis, particularly targeting underserved communities in Nigeria.</p>
+                        <div class="project__tags">
+                            <span class="project__tag">Public Health</span>
+                            <span class="project__tag">Education</span>
+                            <span class="project__tag">Advocacy</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project__card reveal">
+                    <div class="project__header">
+                        <div class="project__icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3 class="project__title">Digital Health Transformation</h3>
+                    </div>
+                    <div class="project__body">
+                        <p class="project__description">Exploring innovative digital solutions to improve healthcare delivery, patient engagement, and clinical workflows in resource-constrained settings.</p>
+                        <div class="project__tags">
+                            <span class="project__tag">Digital Health</span>
+                            <span class="project__tag">mHealth</span>
+                            <span class="project__tag">Innovation</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project__card reveal">
+                    <div class="project__header">
+                        <div class="project__icon"><i class="fas fa-venus"></i></div>
+                        <h3 class="project__title">Maternal Health Optimization</h3>
+                    </div>
+                    <div class="project__body">
+                        <p class="project__description">Developing evidence-based protocols and educational programs to reduce maternal and neonatal mortality through comprehensive prenatal care.</p>
+                        <div class="project__tags">
+                            <span class="project__tag">Maternal Health</span>
+                            <span class="project__tag">Midwifery</span>
+                            <span class="project__tag">Quality Care</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project__card reveal">
+                    <div class="project__header">
+                        <div class="project__icon"><i class="fas fa-book-medical"></i></div>
+                        <h3 class="project__title">Knowledge Sharing &amp; Leadership</h3>
+                    </div>
+                    <div class="project__body">
+                        <p class="project__description">Active contribution to healthcare discourse through publications, presentations, and social media engagement on clinical best practices and innovations.</p>
+                        <div class="project__tags">
+                            <span class="project__tag">Education</span>
+                            <span class="project__tag">Leadership</span>
+                            <span class="project__tag">Community</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         CONTACT SECTION
+    ============================================================ -->
+    <section class="section section--alt" id="contact">
+        <div class="section__container">
+
+            <div class="section__header">
+                <p class="section__subtitle">Let's Connect</p>
+                <h2 class="section__title">Get In Touch</h2>
+                <div class="section__divider"></div>
+                <p class="section__description">Let's collaborate on healthcare innovation and excellence</p>
+            </div>
+
+            <div class="contact__grid">
+
+                <!-- Contact Info -->
+                <div class="contact__info">
+                    <h3>Contact Information</h3>
+                    <p class="contact__description">
+                        I'm always open to discussing healthcare innovation, research collaboration,
+                        or professional opportunities. Feel free to reach out!
+                    </p>
+
+                    <ul class="contact__methods">
+                        <li class="contact__method">
+                            <div class="contact__method-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <div class="contact__method-label">Email</div>
+                                <a href="/cdn-cgi/l/email-protection#0d627e6c69686f6c6863626f6c4d6a606c6461236e6260" class="contact__method-value"><span class="__cf_email__" data-cfemail="ddb2aebcb9b8bfbcb8b3b2bfbc9dbab0bcb4b1f3beb2b0">[email&#160;protected]</span></a>
+                            </div>
+                        </li>
+                        <li class="contact__method">
+                            <div class="contact__method-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <div class="contact__method-label">Phone</div>
+                                <a href="tel:+2349067300948" class="contact__method-value">+234 906 730 0948</a>
+                            </div>
+                        </li>
+                        <li class="contact__method">
+                            <div class="contact__method-icon"><i class="fab fa-linkedin"></i></div>
+                            <div>
+                                <div class="contact__method-label">LinkedIn</div>
+                                <a href="https://www.linkedin.com/in/osadebamwen-enobakhare"
+                                   target="_blank" rel="noopener" class="contact__method-value">
+                                    linkedin.com/in/osadebamwen-enobakhare
+                                </a>
+                            </div>
+                        </li>
+                        <li class="contact__method">
+                            <div class="contact__method-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <div class="contact__method-label">Location</div>
+                                <div class="contact__method-value">Lagos, Nigeria</div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="contact__social">
+                        <a href="https://www.linkedin.com/in/osadebamwen-enobakhare"
+                           target="_blank" rel="noopener"
+                           class="contact__social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="/cdn-cgi/l/email-protection#b4dbc7d5d0d1d6d5d1dadbd6d5f4d3d9d5ddd89ad7dbd9" class="contact__social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:+2349067300948"
+                           class="contact__social-link" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact__form">
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Full Name</label>
+                            <input type="text" id="name" name="name" class="form__input" placeholder="Your full name" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form__input" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="subject" class="form__label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form__input" placeholder="How can I help?" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="message" class="form__label">Message</label>
+                            <textarea id="message" name="message" class="form__textarea" placeholder="Write your message here&hellip;" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary form__submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         FOOTER
+    ============================================================ -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__grid">
+                <div>
+                    <div class="footer__brand">
+                        <div class="footer__logo">
+                            <img src="https://media.licdn.com/dms/image/v2/D4D03AQEq_4xdpuyLDQ/profile-displayphoto-shrink_400_400/B4DZgck0M6HYAg-/0/1752826071748?e=2147483647&v=beta&t=qjretS6rmVj0wkBE2qEJsqKbpm9wXml33L3fe5UuGOA"
+                                 alt="Osadebamwen Enobakhare">
+                        </div>
+                        <span class="footer__brand-text">Osadebamwen Enobakhare</span>
+                    </div>
+                    <p class="footer__description">
+                        Registered Nurse &amp; Midwife dedicated to advancing healthcare through
+                        innovation, data, and compassionate care.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2025 Osadebamwen Enobakhare. All rights reserved.
+                    <span>Designed with <i class="fas fa-heart footer__heart"></i> for Healthcare Excellence</span>
+                </p>
+            </di
